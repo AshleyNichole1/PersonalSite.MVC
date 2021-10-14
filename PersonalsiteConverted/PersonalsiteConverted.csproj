@@ -121,9 +121,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LinkController.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Controllers\ResumeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactAction.MVC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +144,8 @@
     <Content Include="Content\img\michaelrussell %281%29.jpg" />
     <Content Include="Content\img\personalsite size.jpg" />
     <Content Include="Content\img\profilepic.jpg" />
+    <Content Include="Content\img\storefront.png" />
+    <Content Include="Content\img\todo.png" />
     <Content Include="Content\index.html" />
     <Content Include="Content\js\scripts.js" />
     <Content Include="Content\Links.html" />
@@ -172,6 +178,10 @@
     <Content Include="_Archive\Changes-index\Portfolio.html" />
     <Content Include="_Archive\Changes-index\Resume.html" />
     <Content Include="_Archive\Changes-index\Web.config" />
+    <Content Include="configs\ContactSecretKeys.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\img\Resume 2021 SoftwareDev %284%29.pdf" />
     <None Include="Content\packages.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -184,7 +194,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -198,9 +210,11 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Resume.cshtml" />
-    <Content Include="Views\Home\Portfolio.cshtml" />
-    <Content Include="Views\Home\Links.cshtml" />
+    <Content Include="Views\Home\ContactAction.cshtml" />
+    <Content Include="Views\EmailConfirmation.cshtml" />
+    <Content Include="Views\Link\Index.cshtml" />
+    <Content Include="Views\Portfolio\Index.cshtml" />
+    <Content Include="Views\Resume\Index.cshtml" />
     <None Include="_Archive\Changes-index\packages.config" />
     <None Include="_Archive\Changes-index\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -211,8 +225,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="configs\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\ContactAction\" />
+    <Folder Include="Views\ContactData\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
